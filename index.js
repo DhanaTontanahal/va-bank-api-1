@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", async (req, res) => {
-  res.json({ status: "Bark bark v1" });
+  res.json({ status: "Bark bark v1 Jan 28" });
 });
 // Endpoint to get account balance based on email
 app.get("/api/account-balance", (req, res) => {
@@ -110,7 +110,7 @@ const db = mysql.createConnection({
   host: "127.0.0.1",
   user: "root", // Replace with your DB username
   password: "yourpassword", // Replace with your DB password
-  database: "menu_logger_db", // Replace with your DB name
+  database: "menu_logger", // Replace with your DB name
   port: 3306,
 });
 
